@@ -1,0 +1,15 @@
+BOX|1|audio_processor.py|50,10|200,150|200,200,200|This file contains a function to load an audio file, compute its Short-time Fourier Transform (STFT), and return the magnitude spectrogram, time axis, frequency axis, audio time series, and sampling rate.
+BOX|2|main.py|350,10|200,300|200,200,200|The main file that imports necessary libraries, loads an audio file, computes its STFT using the get_frequency_data function from audio_processor.py, tests different hop lengths for the STFT, detects drumbeat times based on energy in a specific frequency range, visualizes the frequency magnitudes over time, and plays the audio.
+BOX|3|get_frequency_data|50,200|150,100|250,200,150|A function that takes an audio file path, FFT size, and hop length, and returns the magnitude spectrogram, time axis, frequency axis, audio time series, and sampling rate.
+BOX|4|scipy|550,350|100,50|200,250,150|A Python library used for scientific and technical computing.
+BOX|5|numpy|350,350|100,50|200,250,150|A Python library for numerical computing, providing support for large multi-dimensional arrays and matrices.
+BOX|6|librosa|150,350|100,50|200,250,150|A Python library for audio and music signal processing.
+BOX|7|matplotlib|450,350|150,50|200,250,150|A Python library for creating static, animated, and interactive visualizations in a variety of formats.
+BOX|8|sounddevice|650,350|150,50|200,250,150|A Python library for playing and recording audio data with support for numerous audio coding formats and devices.
+ARROW|2|3|150,150,250|main.py calls the get_frequency_data function from audio_processor.py to compute the STFT of the loaded audio file.
+ARROW|3|1|150,150,250|The get_frequency_data function is defined in audio_processor.py.
+ARROW|2|4|150,150,250|main.py uses the find_peaks function from scipy to detect drumbeat times.
+ARROW|2|5|150,150,250|main.py uses numpy for numerical computations and array operations.
+ARROW|2|6|150,150,250|main.py uses librosa to load and process the audio file.
+ARROW|2|7|150,150,250|main.py uses matplotlib to visualize the frequency magnitudes over time.
+ARROW|2|8|150,150,250|main.py uses sounddevice to play the audio file.
